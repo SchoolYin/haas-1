@@ -1,0 +1,95 @@
+:root {
+    --bodywidth: 100%;
+    --bodyheight: 100vh;
+    --tabsectionw: 20%;
+    --tabsectionh: 80%;
+    --tabbuttonsize: 20%;
+}
+
+body {
+    display: flex;
+    width: var(--bodywidth);
+    overflow-x: hidden;
+    height: var(--bodyheight);
+    background-color: #5c5e5f;
+}
+
+#tabsection {
+    display: block;
+    width: var(--tabsectionw);
+    height: var(--tabsectionh);
+}
+
+#tabbutton {
+    display: block;
+    width: var(--tabbuttonsize);
+    height: calc(var(--tabbuttonsize) * (var(--tabsectionw) / (var(--tabsectionh) * 100vh)));
+    background-color: rosybrown;
+    cursor: pointer;
+}
+
+#tabcontents {
+    display: none;
+    width: 100%;
+    height: calc(718.3129px);
+    background-color: #FFFFFF;
+}
+
+.tablinks {
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    font-size: 150%;
+    text-align: center;
+    align-content: center;
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+
+#description {
+    color: #FFFFFF;
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    width: 30%;
+    height: fit-content;
+    border: 2px solid black;
+}
+
+#description p {
+    text-align: center;
+}
+
+#games {
+    display: flex;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 100%;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+#game1 {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    margin: 5%;
+    border: 1px solid black;
+    align-items: end;
+}
+
+#game2 {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    margin: 5%;
+    border: 1px solid black;
+    align-items: end;
+}
+
+.cursor {
+    cursor: pointer;
+}
